@@ -1,0 +1,20 @@
+body 
+{
+    margin: 100px;
+    font-size: 50px;
+}
+ 
+li 
+{
+    display: none;
+} 
+
+li:hover 
+{
+    color: red;
+}
+
+ul:hover>li 
+{
+    display: list-item;    
+} 

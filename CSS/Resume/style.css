@@ -1,0 +1,83 @@
+body 
+{
+    background-color: black;
+    margin-left: 25%;
+    margin-top: 50px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.Name
+{
+    display: inline;
+    text-align: left;
+    font-weight: bold;
+    font-size:30px;
+    margin: 0px;
+    padding: 0px;  
+}
+
+.Description
+{
+    display: inline; 
+    text-align: left;
+    font-size:30px;
+    margin: 0px;
+    padding: 0px;  
+}
+
+.Resume 
+{
+    padding: 50px;
+    height: 100%;
+    width: 1000px;
+    color: black;
+    background-image: url("Background.jpg");
+    
+}
+
+.Link 
+{
+    font-family: monospace;
+    font-size: 16px;
+}
+.Link:hover
+{
+    font-size: 25px;
+}
+
+.LinkTab
+{
+    background-color: #D3D3D3;
+    width: 1000px;
+
+}
+
+.EmptySquare
+{
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    margin-left: 20px;
+}
+
+.FilledSquare
+{
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    background: black;
+    margin-left: 20px;
+}
+
+.Skill
+{
+    margin-top: 100px;
+    border: 100px;
+    padding: 100px;
+
+}
+
+
+
+

@@ -1,0 +1,114 @@
+body 
+{
+    margin-left: 5%;
+    margin-top: 0%;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+li 
+{
+    list-style-type: none;
+}
+
+.Navbar 
+{
+    margin: 0px;
+    width: 90%;
+    background-color: grey;
+
+}
+
+.DropDown
+{
+    height: 150px;
+    width: 250px;
+    background-color: lightblue;
+
+    padding: 0px;
+    margin-bottom: 10px;
+
+    transition: 2s;
+
+
+}
+
+.SubItem
+{
+    height: 100px;
+    width: 350px;
+    background-color: coral;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+
+li ul 
+{
+    display: none;
+}
+
+.Navbar>li
+{
+    display: inline;
+    margin-right: 100px; 
+    position: relative;
+}
+
+
+li:hover>.DropDown
+{
+   
+    display: inline-block;
+    position: absolute;
+    /* left: 0px;
+    top: 35px; 
+
+    transform: translate(0px, 35px);
+    transition: 2s; */
+    
+    animation-name: Dropdown;
+    animation-duration: 0.2s;
+    transform: translate(0px, 30px);
+    
+}
+
+li:hover>.SubItem
+{
+    display: inline-block;
+    position: absolute;
+    
+    /* left: 200px;
+    top: 50px; */
+    
+    animation-name: Slide;
+    animation-duration: 0.2s;
+    transform: translate(30px, 0px);
+}
+
+
+@keyframes Dropdown 
+{
+    from
+    {
+        transform: translate(0px, 0px);
+    }
+    to 
+    {
+        transform: translate(0px, 30px);
+    }
+}
+
+@keyframes Slide 
+{
+    from
+    {
+        transform: translate(0px, 0px);
+    }
+    to 
+    {
+        transform: translate(30px, 0px);
+    }
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form</title>
+</head>
+<body background="Background.jpg">
+    <center>
+        
+        <h1><u><img src="Logo.png" height="100" align="middle">Application Form For College<img src="LogoFlipped.png" height="100" align="middle"></u></h1>
+        <br><br><br>
+
+        
+        <table border="0" cellspacing="10">
+            <!-- Personal Details -->
+            <tr bgcolor="#D3D3D3"><td colspan="3" align="center"><h3><u>Personal Details</u></h3></td></tr>
+            <tr>
+                <td><b>Student's Name * :</b></td>
+                <td><input placeholder="First Name"></td>
+                <td><input placeholder="Last Name"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><b>Address * :</b></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>House Number * :</b></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Landmark :</b></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>City * :</b></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>State * :</b></td>
+                <td>
+                    <select>
+                        <option>Delhi</option>
+                        <option>Maharashtra</option>
+                        <option>West Bengal</option>
+                        <option>Tamil Nadu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Pin Code * :</b></td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td><b>Father's Name * :</b></td>
+                <td><input placeholder="First Name"></td>
+                <td><input placeholder="Last Name"></td>
+            </tr>
+            
+            <tr>
+                <td><b>Mother's Name :</b></td>
+                <td><input placeholder="First Name"></td>
+                <td><input placeholder="Last Name"></td>
+            </tr>
+
+            <tr>
+                <td><b>Gender * :</b></td>
+                <td><input type="radio" name="Gender">Male</td>
+                <td><input type="radio" name="Gender">Female</td>
+                <td><input type="radio" name="Gender">Other</td>
+            </tr>
+            <tr>
+                <td><b>Date Of Birth * :</b></td>
+                <td><input type="date"></td>
+            </tr>
+            
+
+            <!-- Contact Details -->
+            <tr bgcolor="#D3D3D3"><td colspan="3" align="center"><h3><u>Contact Details</u></h3></td></tr>
+            <tr>
+                <td><b>Mobile Number * :</b></td>
+                <td><input type="number" min="1000000000" max="9999999999"></td>           
+            </tr>
+            <tr>
+                <td><b>Emergency Contact : </b></td>
+                <td><input type="number" min="1000000000" max="9999999999"></td>
+            </tr>
+            <tr>
+                <td><b>E-mail Address * : </b></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td><b>Alternate E-mail Address : </b></td>
+                <td><input></td>
+            </tr>
+
+            <!-- College Details -->
+            <tr bgcolor="#D3D3D3"><td colspan="3" align="center"><h3><u>College Details</u></h3></td></tr>
+            <tr>
+                <td><b>Select College * :</b></td>
+                <td>
+                    <select>
+                        <option>University School Institute of Technology</option>
+                        <option>Maharaja Agrasen Institute of Technology </option>
+                        <option>Bharati VidyaPeeth</option>
+                        <option>Maharaja Surajmal Institute Of Technology</option>
+                    </select>
+
+                </td> 
+            </tr>
+            <tr>
+                <td><b>Select Branch * :</b></td>
+                <td>
+                    <select>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MAE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Select Shift * :</b></td>
+                <td>
+                    <select>
+                        <option>Morning</option>
+                        <option>Evening</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Documents -->
+            <tr bgcolor="#D3D3D3"><td colspan="3" align="center"><h3><u>Documents</u></h3></td></tr>
+            <tr>
+                <td><b>Passport Size Photo * :</b></td>
+                <td><input type="file" accept="image/png,image/jpg" ></td>
+            </tr>
+            <tr>
+                <td><b>Class 10 Marksheet * :</b></td>
+                <td><input type="file" accept="application/pdf"></td>
+            </tr>
+            <tr>
+                <td><b>Class 12 Marksheet * :</b></td>
+                <td><input type="file" accept="application/pdf"></td>
+            </tr>
+            <tr>
+                <td><b>Applicant Signatures * :</b></td>
+                <td><input type="file" accept="image/png,image/jpg"></td>
+            </tr>
+
+            <!-- Payment -->
+            <tr bgcolor="#D3D3D3"><td colspan="3" align="center"><h3><u>Payment</u></h3></td></tr>
+            <tr>
+                <td><b>Credit &Backslash; Debit Card Number * :</b></td>
+                <td><input type="number" colspan="2" placeholder="XXXX-XXXX-XXXX-XXXX"></td>
+            </tr>
+            <tr>
+                <td><b>Expiry Date * :</b></td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td><b>CCV * :</b></td>
+                <td><input type="password" min="100" max="999"></td>
+            </tr>
+
+            <!-- Checkout -->
+            <tr></tr>
+            <tr bgcolor="#D3D3D3">
+                <td colspan="3" align="center"><input value="Submit Form" type="submit"></td>
+            </tr>
+        </table>
+        <h3>Note: All The Asterisk(*) Fields Are Necessary</h3>
+    </center>
+</body>
+</html>

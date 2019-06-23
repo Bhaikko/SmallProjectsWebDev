@@ -1,0 +1,37 @@
+body
+{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.Table 
+{
+    display: table;
+}
+.TableHead
+{
+    font-weight: bold;
+    background-color: #343a40;
+    display: table-row;
+}
+.TableRow
+{
+    display: table-row;
+    background-color: lightblue;
+    border: 0px;
+    border-bottom: 5px solid black;
+}
+
+.Cell
+{
+    display: table-cell;
+
+    font-family: monospace;
+    font-size: 24px;
+    padding: 50px;
+
+
+    
+}
+
+
