@@ -1,10 +1,11 @@
 class Contact
 {
-    constructor(contactName, contactAddress, contactNumber)
+    constructor(contactName, contactAddress, contactNumber, contactImage)
     {
         this.contactName = contactName;
         this.contactAddress = contactAddress;
         this.contactNumber = contactNumber;
+        this.contactImage = contactImage;
     }
 }
 
@@ -59,10 +60,20 @@ function addContactToList(currentContact)
     contactBox.appendChild(value);
     contactBox.appendChild(document.createElement("br"));
 
+    let contactImage = document.createElement("div");
+    contactImage.classList.add("contactImage");
+    contactImageTag = document.createElement("img");
+    contactImageTag.setAttribute("src", currentContact.contactImage);
+    contactImage.appendChild(contactImageTag);
+    contactBox.appendChild(contactImage);
+    contactBox.appendChild(document.createElement("br"));
+
     let removeButton = document.createElement("button");
     removeButton.setAttribute("id", "removeButton");
     removeButton.innerText = "Remove";
     contactBox.appendChild(removeButton);
+
+
 
 }
 
@@ -71,10 +82,12 @@ function createContact()
     let contactName = document.getElementById("contactName");
     let contactAddress = document.getElementById("contactAddress");
     let contactNumber = document.getElementById("contactNumber");
-    
-    contact = new Contact(contactName.value, contactAddress.value, contactNumber.value);
-    console.log(contact);
+    let contactImage = document.getElementById("contactImage");
+    console.log(contactImage.value);
+    let path = contactImage.value.split("\\");
+    let fileName = "Images/" + path[path.length - 1];
 
+    contact = new Contact(contactName.value, contactAddress.value, contactNumber.value, fileName);
     
     addContactToList(contact);
 }
