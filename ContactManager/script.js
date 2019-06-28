@@ -11,6 +11,12 @@ class Contact
 
 let addContactButton = document.getElementById("addContactButton");
 
+function removeContact(event)
+{
+    let contactBox = event.target.parentElement;
+    contactBox.remove();
+}
+
 function addContactToList(currentContact)
 {
     let contactList = document.getElementById("contactList");
@@ -51,7 +57,7 @@ function addContactToList(currentContact)
 
     key = document.createElement("div");
     key.classList.add("key");
-    key.innerText = "Number : ";
+    key.innerText = "Phone Number : ";
     contactBox.appendChild(key);
 
     value = document.createElement("div");
@@ -73,6 +79,7 @@ function addContactToList(currentContact)
     removeButton.innerText = "Remove";
     contactBox.appendChild(removeButton);
 
+    removeButton.addEventListener("click", removeContact);
 
 
 }
@@ -83,12 +90,17 @@ function createContact()
     let contactAddress = document.getElementById("contactAddress");
     let contactNumber = document.getElementById("contactNumber");
     let contactImage = document.getElementById("contactImage");
-    console.log(contactImage.value);
     let path = contactImage.value.split("\\");
     let fileName = "Images/" + path[path.length - 1];
 
     contact = new Contact(contactName.value, contactAddress.value, contactNumber.value, fileName);
+    contactName.value = "";
+    contactAddress.value = "";
+    contactNumber.value = "";
+    contactImage.value = "";
+    
     
     addContactToList(contact);
 }
+
 addContactButton.addEventListener("click", createContact);

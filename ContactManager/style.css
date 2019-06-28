@@ -3,6 +3,7 @@ body
     margin-left: 100px;
     margin-top: 50px;
     font-family: monospace;
+    background-color: black;
 }
 
 /* Contact Box */
@@ -20,6 +21,7 @@ body
     transition: 1s;
 
     border-radius: 10px;
+    border: solid white 2px;
 }
 
 .contactBox:hover 
@@ -57,9 +59,10 @@ body
 div>img 
 {
     border-radius: 50%;
+    width: 150px;
     height: 150px;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 80px;
 }
 
@@ -78,6 +81,7 @@ div>img
     padding: 20px;
     border-radius: 10px;
     width: 400px;
+    margin-bottom: 50px;
 }
 
 input
