@@ -73,6 +73,14 @@ div>img
     cursor: pointer;
 }
 
+#editButton
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
 /* Contact Input Box */
 .contactInputBox
 {
@@ -89,4 +97,10 @@ input
     background-color: whitesmoke;
     margin-bottom: 30px;
     width: 100%;
+}
+
+.contactListHeading
+{
+    color: white;
+    font-size: 50px;
 }

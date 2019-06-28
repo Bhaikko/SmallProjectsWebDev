@@ -17,6 +17,21 @@ function removeContact(event)
     contactBox.remove();
 }
 
+function editContact(event)
+{
+    let contactBox = event.target.parentElement.querySelectorAll(".value");
+    for (let i=0 ; i < contactBox.length ; i++)
+    {
+        let condition = contactBox[i].getAttribute("contenteditable");
+        if (condition == "false")
+        {  contactBox[i].setAttribute("contenteditable", "true")}
+        else if (condition == "true")
+        { contactBox[i].setAttribute("contenteditable", "false")}
+    }
+
+        
+}
+
 function addContactToList(currentContact)
 {
     let contactList = document.getElementById("contactList");
@@ -41,6 +56,7 @@ function addContactToList(currentContact)
     let value = document.createElement("div");
     value.classList.add("value");
     value.innerText = currentContact.contactName;
+    value.setAttribute("contenteditable", "false");
     contactBox.appendChild(value);
     contactBox.appendChild(document.createElement("br"));
 
@@ -52,6 +68,7 @@ function addContactToList(currentContact)
     value = document.createElement("div");
     value.classList.add("value");
     value.innerText = currentContact.contactAddress;
+    value.setAttribute("contenteditable", "false");
     contactBox.appendChild(value);
     contactBox.appendChild(document.createElement("br"));
 
@@ -63,6 +80,7 @@ function addContactToList(currentContact)
     value = document.createElement("div");
     value.classList.add("value");
     value.innerText = currentContact.contactNumber;
+    value.setAttribute("contenteditable", "false");
     contactBox.appendChild(value);
     contactBox.appendChild(document.createElement("br"));
 
@@ -79,7 +97,13 @@ function addContactToList(currentContact)
     removeButton.innerText = "Remove";
     contactBox.appendChild(removeButton);
 
+    let editButton = document.createElement("button");
+    editButton.setAttribute("id", "editButton");
+    editButton.innerText = "Edit";
+    contactBox.appendChild(editButton);
+
     removeButton.addEventListener("click", removeContact);
+    editButton.addEventListener("click", editContact);
 
 
 }
@@ -98,7 +122,6 @@ function createContact()
     contactAddress.value = "";
     contactNumber.value = "";
     contactImage.value = "";
-    
     
     addContactToList(contact);
 }
