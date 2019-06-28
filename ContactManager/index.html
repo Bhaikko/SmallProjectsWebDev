@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contactBox">
+    <form action="script.js" class="contactInputBox">
+        <h1>Contact Input</h1>
+        <input type="text" name="contactName" placeholder="Full Name" class="inputBox">
+        <br>
+        <input type="text" name="contactAddress" placeholder="Address" class="inputBox">
+        <br>
+        <input type="text" name="contactNumber" placeholder="Number" class="inputBox">
+        <br>
+        <input type="submit" value="Add To Contact List">
+        
+    </form>
+
+    <!-- <div class="contactBox">
         <div class="contactHeading">Contact</div>     
         <div class="key">Name : </div>
         <div class="value">Dante</div>  
@@ -21,9 +33,10 @@
         <br>
         <button id="removeButton">Remove</button>
         <span class="contactImage"><img src="Images/Benny Potter.png"></span> 
+    </div> -->
 
 
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
