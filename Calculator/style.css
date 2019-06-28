@@ -10,7 +10,7 @@ body
 #outputBox
 {
     height: 50px;
-    width: 100%;
+    width: 90%;
 
     color: whitesmoke;
     text-align: right;
@@ -26,17 +26,29 @@ body
 .button
 {
     display: inline-block;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 5px;
+    border: 0px;
+
     height: 90px;
     width: 175px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     padding-top: 15px;
+}
+
+.button:hover 
+{
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .function
 {
     font-style: italic;
+}
+
+.digit
+{
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
