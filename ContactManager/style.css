@@ -1,0 +1,64 @@
+.body
+{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.contactBox
+{
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(66, 85, 97);
+    position: relative;
+    box-shadow: 5px 5px grey;
+    transition: 1s;
+}
+
+.contactBox:hover 
+{
+    transform: translate(5px, 5px);
+    box-shadow: 0px 0px;
+    transition: 1s;
+}
+
+.contactHeading
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.key
+{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.value
+{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+span>img 
+{
+    border-radius: 50%;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+}
+
+#removeButton
+{
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
