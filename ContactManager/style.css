@@ -8,10 +8,12 @@ body
 /* Contact Box */
 .contactBox
 {
+    display: inline-block;
     height: 300px;
     width: 400px;
     padding: 10px;
     margin-top: 20px;
+    margin-left: 20px;
     background-color: rgb(66, 85, 97);
     position: relative;
     box-shadow: 5px 5px grey;
@@ -52,7 +54,7 @@ body
     margin-bottom: 30px;
 }
 
-span>img 
+div>img 
 {
     border-radius: 50%;
     height: 150px;
@@ -75,10 +77,12 @@ span>img
     background-color: rgb(255, 140, 26);
     padding: 20px;
     border-radius: 10px;
+    width: 400px;
 }
 
 input
 {
     background-color: whitesmoke;
     margin-bottom: 30px;
+    width: 100%;
 }

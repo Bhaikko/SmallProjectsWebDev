@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="script.js" class="contactInputBox">
+    <div name="contactForm" class="contactInputBox" >
         <h1>Contact Input</h1>
-        <input type="text" name="contactName" placeholder="Full Name" class="inputBox">
+        <input type="text" id="contactName" placeholder="Full Name" class="inputBox" required spellcheck="false">
         <br>
-        <input type="text" name="contactAddress" placeholder="Address" class="inputBox">
+        <input type="text" id="contactAddress" placeholder="Address" class="inputBox" required spellcheck="false">
         <br>
-        <input type="text" name="contactNumber" placeholder="Number" class="inputBox">
+        <input type="number" id="contactNumber" placeholder="Number" class="inputBox" required spellcheck="false">
         <br>
-        <input type="submit" value="Add To Contact List">
+        <input type="button" value="Add To Contact List" id="addContactButton">
         
-    </form>
+    </div>
 
-    <!-- <div class="contactBox">
-        <div class="contactHeading">Contact</div>     
-        <div class="key">Name : </div>
-        <div class="value">Dante</div>  
-        <br>       
-        <div class="key">Address : </div>
-        <div class="value">Nero</div>
-        <br>
-        <div class="key">Number : </div>
-        <div class="value">Vergil</div>
-        <br>
-        <button id="removeButton">Remove</button>
-        <span class="contactImage"><img src="Images/Benny Potter.png"></span> 
-    </div> -->
+
+    <div id="contactList">
+            <div class="contactBox">
+                    <div class="contactHeading">Contact</div>     
+                    <div class="key">Name : </div>
+                    <div class="value">Dante</div>  
+                    <br>       
+                    <div class="key">Address : </div>
+                    <div class="value">Nero</div>
+                    <br>
+                    <div class="key">Number : </div>
+                    <div class="value">Vergil</div>
+                    <br>
+                    <button id="removeButton">Remove</button>
+                    <div class="contactImage"><img src="Images/Benny Potter.png"></div> 
+                </div>
+    </div>
+
+    
 
 
 
