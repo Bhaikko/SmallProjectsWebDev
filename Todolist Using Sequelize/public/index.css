@@ -1,0 +1,18 @@
+body 
+{
+    font-size: 40px;
+    margin-top: 50px;
+    font-family: monospace;
+
+}
+
+.strike
+{
+    text-decoration: line-through;
+}
+
+#itemList
+{
+    margin-top: 50px;
+}
+

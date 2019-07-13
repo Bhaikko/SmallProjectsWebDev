@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <form action="/" method="POST">
+        <label for="item">Item</label>
+        <input id="item" name="item" type="text">
+        <button type="submit">Add To List</button>
+        <button id="deleteButton">Delete Striked Items</button>
+    </form>
+
+    <div id="itemList">
+        {{#each items as |item|}}
+            {{#if item.dataValues.striked}}
+                <li class="listItem strike">{{item.dataValues.item}}</li> 
+            {{else}}
+                <li class="listItem">{{item.dataValues.item}}</li> 
+            {{/if}}
+                       
+        {{/each}}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
